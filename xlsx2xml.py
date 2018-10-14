@@ -77,8 +77,8 @@ def translate_excel_to_xml(xlsx_path, name):
 
 if __name__ == "__main__":
     time_begin = time.time()
-    xlsx_dir = 'C:\\Users\\anton\\PycharmProjects\\excel_tensor\\xlsx_files\\'
-    xml_dir = 'C:\\Users\\anton\\PycharmProjects\\excel_tensor\\xlsx_to_xml\\'
+    xlsx_dir = '\\xlsx_files\\'
+    xml_dir = '\\xlsx_to_xml\\'
     for name in os.listdir(xlsx_dir):
         if name.endswith('.xlsx'):
             xlsx_path = os.path.join(xlsx_dir, name)
