@@ -21,9 +21,7 @@ def translate_excel_to_xml(xlsx_path, name):
     root = doc.createElement('root')
     doc.appendChild(root)
 
-    for nrow in range(0, nrows):
-        if nrow == 0:
-            continue
+    for nrow in range(1, nrows):
         item = doc.createElement('item')
         for ncol in range(0, ncols):
             key = "%s" % table.cell(nrow, ncol).value
